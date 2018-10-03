@@ -12,7 +12,10 @@
     "autoload": {
         "files": [
             "src/yesnt.php"
-        ]
+        ],
+        "psr-4": {
+            "TractorCow\\Yesnt\\": "src/"
+        }
     },
     "require": {
         "php": ">=7.1"

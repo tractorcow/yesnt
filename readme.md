@@ -15,6 +15,8 @@ Note: notnt support not currently supported
 ```php
 <?php
 
+use function TractorCow\Yesnt\yesnt;
+
 require 'vendor/autoload.php';
 
 if (yesnt(true)) {

@@ -1,0 +1,23 @@
+language: php
+sudo: false
+dist: trusty
+
+php:
+- 7.1
+- 7.2
+- 7.3.0RC1
+
+before_script:
+# Disable xdebug if enabled
+- if php -m | grep -q 'xdebug'; then phpenv config-rm xdebug.ini; fi
+
+# Install composer dependencies
+- composer validate
+- composer install --prefer-dist --no-interaction --no-progress --no-suggest --optimize-autoloader --verbose --profile
+
+script:
+# Use phpdbg for coverage
+- phpdbg -dmemory_limit=-1 -qrr vendor/bin/phpunit --coverage-clover ./build/logs/clover.xml
+
+after_success:
+- travis_retry php vendor/bin/php-coveralls -v

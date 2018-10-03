@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Standard module phpunit configuration.
+Requires PHPUnit ^5.7
+-->
+<phpunit colors="true">
+    <testsuite name="Yesnt">
+        <directory>tests/</directory>
+    </testsuite>
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+</phpunit>

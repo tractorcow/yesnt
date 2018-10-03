@@ -1,0 +1,17 @@
+{
+    "name": "tractorcow/yesnt",
+    "description": "Provides non-yes boolean logic augmentation",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Damian Mooyman",
+            "email": "damian.mooyman@littlegiant.co.nz"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/yesnt.php"
+        ]
+    }
+}

@@ -1,5 +1,7 @@
 # Yesnt
 
+[![Build Status](https://travis-ci.org/tractorcow/yesnt.svg?branch=master)](https://travis-ci.org/tractorcow/yesnt)
+
 Provides non-yes boolean logic augmentation
 
 Note: notnt support not currently supported

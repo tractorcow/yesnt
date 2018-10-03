@@ -19,7 +19,7 @@ use function TractorCow\Yesnt\yesnt;
 
 require 'vendor/autoload.php';
 
-if (yesnt(true)) {
+if (yesnt()) {
     echo "um, why are you here?";
 } else {
     echo "yes, but not";

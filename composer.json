@@ -13,5 +13,8 @@
         "files": [
             "src/yesnt.php"
         ]
+    },
+    "require": {
+        "php": ">=7.1"
     }
 }
